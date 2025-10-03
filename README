@@ -1,5 +1,8 @@
-NEATVI
+NEATVI - Wasmer Fork
 ======
+
+The purpose of this Neatvi fork is to package it up and allow it to 
+run in a browser via Wasmer.
 
 Neatvi is a small vi/ex editor for editing UTF-8 text.  It supports
 syntax highlighting, multiple windows, right-to-left languages, and
