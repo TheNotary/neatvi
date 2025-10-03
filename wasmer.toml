@@ -1,0 +1,16 @@
+[package]
+name = "thenotary/neatvi"
+version = '0.1.0'
+entrypoint = "vi"
+
+[[module]]
+name = "vi"
+source = "./vi"
+
+[[command]]
+name = "vi"
+module = "vi"
+runner = "https://webc.org/runner/wasi"
+
+[command.annotations.wasi]
+atom = "vi"
