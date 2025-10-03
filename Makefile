@@ -1,5 +1,8 @@
 CC = cc
 CFLAGS = -Wall -O2
+#CC = clang
+#CC = emcc
+#CFLAGS = --target=wasm32-wasi -Wall -O2
 LDFLAGS =
 
 OBJS = vi.o ex.o lbuf.o mot.o sbuf.o ren.o dir.o syn.o reg.o led.o \
@@ -18,3 +21,4 @@ stag: $(STAG)
 	$(CC) -o $@ $(STAG) $(LDFLAGS)
 clean:
 	rm -f *.o vi stag
+	rm -f *.wasm
