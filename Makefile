@@ -1,5 +1,6 @@
-CC = cc
+#CC = cc
 CFLAGS = -Wall -O2
+CC = wasixcc
 #CC = clang
 #CC = emcc
 #CFLAGS = --target=wasm32-wasi -Wall -O2
